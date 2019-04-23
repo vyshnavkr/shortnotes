@@ -21,10 +21,10 @@
 	new FileReader(file).read(in);			// reads file char by char and put into 'in'
 ```
 
-cons of FileWriter:</br>
-	- \n manually written</br>
-cons of FileReader:</br>
-	- declare the array size before hand</br>
+#### cons of FileWriter:</br>
+	- \n has to be manually written</br>
+#### cons of FileReader:</br>
+	- array size has to be declared before hand</br>
 	- reads data 1 char at a time, looking for the end of file each after each read()</br>
 
 
