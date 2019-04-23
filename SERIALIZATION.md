@@ -5,12 +5,12 @@
   to serialize an object means to convert its state to a byte (byte=8bits) stream so that the byte stream can be reverted back into a copy of the object.
 
 #### why serialization?
-  object storage: to read/write objects to/from file/database/disk <br>
-  object transmission via network: to read/write objects to/from network
+- object storage: to read/write objects to/from file/database/disk <br>
+- object transmission via network: to read/write objects to/from network
 
 #### alternative for java serialization:
-  json: if consumer is a browser using ajax/jquery <br>
-  xml <br>
+- json: if consumer is a browser using ajax/jquery <br>
+- xml <br>
   Note: java serialization is used: if consumer is another Java program (eg: RMI)
 
 ## BASICS - MUST KNOW:
@@ -26,7 +26,7 @@
   (NOTE: use try/catch)
 
 #### what if object contains ref var?
-  automatic serialization & deserialization happens  <br>
+  automatic serialization & deserialization happens,  <br>
   just put 'implements serializable' for every nested class
 
 #### what if referred object's source code isn't available(ie,you can't put 'implements Serializable on that referred object')?
