@@ -1,8 +1,8 @@
 # FILES:
 
 #### create a file
-File file = new File("myFile.txt");
-file.createNewFile();
+	File file = new File("myFile.txt");
+	file.createNewFile();
 
 #### FileWriter
 new FileWriter(file).write("howdy\nfolks\n");	// creates a file and writes char by char
