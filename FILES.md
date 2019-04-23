@@ -4,10 +4,12 @@
 	File file = new File("myFile.txt");
 	file.createNewFile();
 
+
 #### FileWriter
 	new FileWriter(file).write("howdy\nfolks\n");	// creates a file and writes char by char
 	fw.flush(); 					// flush before closing
 	fw.close();					// close file when done
+
 
 #### FileReader
 	char[] in = new char[50]; 			// to store input
@@ -19,6 +21,7 @@ cons of FileReader:
 	- declare the array size before hand
 	- reads data 1 char at a time, looking for the end of file each after each read()
 
+
 #### BufferedWriter vs PrintWriter
 1. Writing using BufferedWriter:
 	.write()				//line1
@@ -26,6 +29,7 @@ cons of FileReader:
 2. Writing using PrintWriter:
 	.println()				//line1 (prints character[]/String and then prints a new line)
 (NOTE: Therefore to write, PrintWriter is better than BufferedWriter)
+
 
 #### PrintWriter: best for writing into a file
 	File file = new File("fileWrite2.txt"); 	// create a File
@@ -39,29 +43,36 @@ cons of FileReader:
 	String data = br.readLine();			// read some data
 	while( (s = br.readLine()) != null)		// read the whole file line-by-line
 
+
 #### create a file
 	File file = new File("myFile.txt");		// if myFile already exists, file refers to that
 	file.createNewFile();				// if myFile already exists, this line of code is not needed
+
 
 #### create a directory
 	File dir = new File("myDir");
 	dir.mkdir();
 
+
 #### create a file inside a directory
 	File file = new File(dir, "myFile.txt");
-file.createNewFile();
+	file.createNewFile();
+
 
 #### delete
 file.delete();					// delete a file
 dir.delete();					// delete a directory (ONLY IF ITS EMPTY!)
 
+
 #### rename a file
 File newFile = new File(dir, "myNewFile.txt");
 file.renameTo(newFile);
 
+
 #### rename a directory
 File newDir = new File("myNewDir");
 newDir.renameTo(newDir);
+
 
 #### list all files and directories inside a directory
 File dir = new File("myDir");
