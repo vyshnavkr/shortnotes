@@ -21,22 +21,25 @@
 	new FileReader(file).read(in);			// reads file char by char and put into 'in'
 ```
 
-cons of FileWriter:
-	- \n manually written
-cons of FileReader:
-	- declare the array size before hand
-	- reads data 1 char at a time, looking for the end of file each after each read()
+cons of FileWriter:</br>
+	- \n manually written</br>
+cons of FileReader:</br>
+	- declare the array size before hand</br>
+	- reads data 1 char at a time, looking for the end of file each after each read()</br>
 
 
 #### BufferedWriter vs PrintWriter:
-```
+
 1. Writing using BufferedWriter:
+```
 	.write()				//line1
 	.newLine()				//line2
-2. Writing using PrintWriter:
-	.println()				//line1 (prints character[]/String and then prints a new line)
-(NOTE: Therefore to write, PrintWriter is better than BufferedWriter)
 ```
+2. Writing using PrintWriter:
+```
+	.println()				//line1 (prints character[]/String and then prints a new line)
+```
+(NOTE: Therefore to write, PrintWriter is better than BufferedWriter)
 
 
 #### PrintWriter: best for writing into a file:
@@ -113,8 +116,8 @@ cons of FileReader:
 
 #### important methods:
 ```
-	 - System.console(): 	returns Console object
-	 - readLine(): 		returns String	(takes String s input -> %s)
-	 - readPassword(): 	returns char[ ] (but takes String s input -> %s)
-	 - format(): 		prints 
+	 - System.console(): 	// returns Console object
+	 - readLine(): 		// returns String	(takes String s input -> %s)
+	 - readPassword(): 	// returns char[ ] (but takes String s input -> %s)
+	 - format(): 		// prints 
 ```	 
