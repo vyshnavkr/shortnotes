@@ -1,6 +1,6 @@
 # SERIALIZATION IN JAVA:
 
-0. ## INTRO:
+## INTRO:
 #### what is serialization?
   to serialize an object means to convert its state to a byte (byte=8bits) stream so that the byte stream can be reverted back into a copy of the object.
 
@@ -13,7 +13,7 @@
   xml
   Note: java serialization is used: if consumer is another Java program (eg: RMI)
 
-1. ## BASICS:
+## BASICS - MUST KNOW:
 #### how to serialize/deserialize?
   serialize: new ObjectOutputStream(new FileOutputStream("fileName.txt/.ser/no extension")).writeObject(object)
   deserialize: objectName = (className) new ObjectInputStream(new FileInputStream("fileName.txt/.ser/no extension")).readObject()
@@ -36,23 +36,25 @@
   implement writeObject(): defaultWriteObject() + writeInt(collar.getSize())
   implement readObject(): defaultReadObject() + new Collar(readInt())
 
-2. ## Inheritance and Serialization:
+
+## BASICS - NEXT:
+#### Inheritance and Serialization:
 a) when only superclass implements Serializable: subclasses automatically serialized
 b) when only subclass implements Serializable: while deserialzing, subclass states get serialized values, but inherited states get constructed values or initial values given during declaration
 
-3. ## Collection/Array and Serialization:
+#### Collection/Array and Serialization:
 If you serialize a collection or an array, every element must be
 serializable! A single non-serializable element will cause serialization to fail.
 Also, collection interfaces (List) are not serializable, the concrete collection classes 
 in the Java API are (ArrayList).
 
-4. ## Static and Serialization: 
+#### Static and Serialization: 
 Static variables not serialized/deserialized
 
-5. ## Versioning problem: 
+#### Versioning problem: 
 serializing and deserializing should be in the same version
 
-6. ## Note:
+##EXTRAS:
 #### Rules:
 Don't forget try-catch and .close() while serializing and de-serializing
 
