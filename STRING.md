@@ -3,7 +3,7 @@
 ## String:
  - #### Immutable: 
  	Any modifications on an object will create a new object
- - 'A string object is abandoned upon creation' if its a modified version of an existing string AND NOT ASSIGNED TO ANY REFERENCE VARIABLE
+ 	'A modified string object is abandoned upon creation' if its NOT ASSIGNED TO ANY REFERENCE VARIABLE
  - #### Final: 
  	String class is marked final so that nobody can override the behaviors of any of the String methods. Thus protecting immutability.
  - #### Memory:
