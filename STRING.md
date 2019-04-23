@@ -1,8 +1,7 @@
 # STRING, STRINGBUILDER, STRINGBUFFER
 
 ## String:
- - #### IMMUTABLE: 
- any modifications on an object will create a new object
+ - #### IMMUTABLE: #### any modifications on an object will create a new object
  - 'A string object is abandoned upon creation' if its a modified version of an existing string AND NOT ASSIGNED TO ANY REFERENCE VARIABLE
  - #### FINAL: 
  String class is marked final so that nobody can override the behaviors of any of the String methods. Thus protecting immutability.
