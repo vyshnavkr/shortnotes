@@ -31,10 +31,13 @@
 
 #### what if referred object's source code isn't available(ie,you can't put 'implements Serializable on that referred object')?
   transient: avoids serialization of that referred object  <br>
+  
   (if no transient given: runtime exception: NonSerializableException at while serializing ie, at writeObject())  <br>
+  
   (if transient given:  <br>
             - and if tried to access the transient variable after deserialization -> returns 'null' <br>
   		      - and if tried to access the transient variable's state after deserialization -> returns 'NullPointerException'')  <br>
+            
   Note: transient can also be used for primitives.
   
 
