@@ -9,7 +9,7 @@
 - object transmission via network: to read/write objects to/from network
 
 #### Alternative for java serialization:
-- json: if consumer is a browser using ajax/jquery <br>
+- json: if consumer is a browser using ajax/jquery (ie, web services) <br>
 - xml <br>
   Note: java serialization is used: if consumer is another Java program (eg: RMI)
 
@@ -67,7 +67,7 @@ Static variables are not serialized/deserialized
 #### Versioning problem: 
 Serializing and deserializing should be in the same version
 
-##EXTRAS:
+## EXTRAS:
 #### Rules:
 Don't forget try-catch and .close() while serializing and de-serializing
 
