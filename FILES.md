@@ -5,13 +5,13 @@
 	file.createNewFile();
 
 #### FileWriter
-new FileWriter(file).write("howdy\nfolks\n");	// creates a file and writes char by char
-fw.flush(); 					// flush before closing
-fw.close();					// close file when done
+	new FileWriter(file).write("howdy\nfolks\n");	// creates a file and writes char by char
+	fw.flush(); 					// flush before closing
+	fw.close();					// close file when done
 
 #### FileReader
-char[] in = new char[50]; 			// to store input
-new FileReader(file).read(in);			// reads file char by char and put into 'in'
+	char[] in = new char[50]; 			// to store input
+	new FileReader(file).read(in);			// reads file char by char and put into 'in'
 
 cons of FileWriter:
 	- \n manually written
@@ -28,27 +28,27 @@ cons of FileReader:
 (NOTE: Therefore to write, PrintWriter is better than BufferedWriter)
 
 #### PrintWriter: best for writing into a file
-File file = new File("fileWrite2.txt"); 	// create a File
-PrintWriter pw = new PrintWriter(file);
-pw.println("howdy folks");
+	File file = new File("fileWrite2.txt"); 	// create a File
+	PrintWriter pw = new PrintWriter(file);
+	pw.println("howdy folks");
 
 #### BufferedReader: best for reading from a file
-File file = new File("fileWrite2.txt"); 	// create a File object AND open "fileWrite2.txt"
-FileReader fr = new FileReader(file); 		// create a FileReader to get data from 'file'
-BufferedReader br = new BufferedReader(fr); 	// create a BufferReader to get its data from a Reader
-String data = br.readLine();			// read some data
-while( (s = br.readLine()) != null)		// read the whole file line-by-line
+	File file = new File("fileWrite2.txt"); 	// create a File object AND open "fileWrite2.txt"
+	FileReader fr = new FileReader(file); 		// create a FileReader to get data from 'file'
+	BufferedReader br = new BufferedReader(fr); 	// create a BufferReader to get its data from a Reader
+	String data = br.readLine();			// read some data
+	while( (s = br.readLine()) != null)		// read the whole file line-by-line
 
 #### create a file
-File file = new File("myFile.txt");		// if myFile already exists, file refers to that
-file.createNewFile();				// if myFile already exists, this line of code is not needed
+	File file = new File("myFile.txt");		// if myFile already exists, file refers to that
+	file.createNewFile();				// if myFile already exists, this line of code is not needed
 
 #### create a directory
-File dir = new File("myDir");
-dir.mkdir();
+	File dir = new File("myDir");
+	dir.mkdir();
 
 #### create a file inside a directory
-File file = new File(dir, "myFile.txt");
+	File file = new File(dir, "myFile.txt");
 file.createNewFile();
 
 #### delete
