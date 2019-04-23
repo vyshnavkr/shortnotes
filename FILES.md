@@ -60,26 +60,26 @@ cons of FileReader:
 
 
 #### delete
-file.delete();					// delete a file
-dir.delete();					// delete a directory (ONLY IF ITS EMPTY!)
+	file.delete();					// delete a file
+	dir.delete();					// delete a directory (ONLY IF ITS EMPTY!)
 
 
 #### rename a file
-File newFile = new File(dir, "myNewFile.txt");
-file.renameTo(newFile);
+	File newFile = new File(dir, "myNewFile.txt");
+	file.renameTo(newFile);
 
 
 #### rename a directory
-File newDir = new File("myNewDir");
-newDir.renameTo(newDir);
+	File newDir = new File("myNewDir");
+	newDir.renameTo(newDir);
 
 
 #### list all files and directories inside a directory
-File dir = new File("myDir");
-String[] filesAndDirectories = new String[100];
-filesAndDirectories = dir.list();		// create a String array of files and directories present inside dir
-for(String fn : files) 				// iterate through it
-  System.out.println("found " + fn);
+	File dir = new File("myDir");
+	String[] filesAndDirectories = new String[100];
+	filesAndDirectories = dir.list();		// create a String array of files and directories present inside dir
+	for(String fn : files) 				// iterate through it
+	  System.out.println("found " + fn);
 
 
 # CONSOLE:
