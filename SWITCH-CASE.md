@@ -1,5 +1,6 @@
 # SWITCH-CASE
 
+## STEPS TO FOLLOW IN ORDER:
 1. check if switch, {}, case, : and ; are present <br>
 2. check if the switch expression follows its rules <br> <br>
 3. check if the case constant follows its rules <br>
@@ -26,9 +27,9 @@ This produces compiler error since both are same for compiler  <br>
 ## WORKING:
 Best explanation ever!!: Enters at matching Case. If no matching case in entire Switch block, then enters at default(if present). Then falls through until break or last case end.
 
-(NOTE:  <br>
+## NOTE:  
 1. Case blocks may/may not use paranthesis.  <br>
 2. Multiple lines of code are possible in case blocks without paranthesis  <br>
 3. Look at pg 375 question at top: switch expressionil byte int-ilek convert ayalum,  <br>
 compilerin aryam "switchil ullad serikum oru byte aan. case-l anenkil oru 128-um ind.  <br>
-byte-l orikalum adu kollilla. So njn error adikum")
+byte-l orikalum adu kollilla. So njn error adikum"
