@@ -13,7 +13,7 @@
 ## Basics:
  1. syntax:
  ```
-  assert expression;
+  assert expression1;
 ```
 ```
   assert expression1 : expression2; 
