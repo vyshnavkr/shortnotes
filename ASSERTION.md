@@ -1,16 +1,16 @@
 # ASSERTION:
 
 
-##Why Assertions?
+## Why Assertions?
  - used for testing
  - alternative for if-else, runtime exceptions etc.. 
    adv: no performance issue unlike the others, though assertions will be present in the code always once written, but when disabled for deploying code it will be ignored by JVM as if it weren't there.
 
-##When, when-not to use Assertion?
+## When, when-not to use Assertion?
  - use IllegalArgumentException to validate public method parameters, don't use assertions
  - use assertion to validate private method parameters
    
-##Basics:
+## Basics:
 1. assert expression;
 2. assert expression1 : expression2;
   Expression1 - boolean.
@@ -19,14 +19,14 @@
   Brackets are not compulsory for expression
 3. AssertionError
 
-##Enabling and Disabling:
+## Enabling and Disabling:
 0. assertions are inactive unless specifically "turned on" (enabled),
 1. ea/da (or enableassertions/disableassertions): java -ea com.geeksanonymous.TestClass
 2. enabling/disabling with: (no arguments-all classes)/class/package
 3. mixing ea and dsa
 4. asa/dsa -> for system classes
 
-##Appropriate-Unappropriate uses of using assertions:
+## Appropriate-Unappropriate usages of assertions:
 Dont: - assertion using public method's argument
       - side-effect causing things
 Do:   -assertion using private method's argument
