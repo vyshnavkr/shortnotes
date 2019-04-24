@@ -34,8 +34,8 @@
 ## Appropriate-Unappropriate usages of assertions:
 Dont: 
 - assertion using public method's argument
-- side-effect causing things <br>
+- side-effect causing things 
 Do:   
--assertion using private method's argument
+- assertion using private method's argument
 - case/default of switch-case 
 
