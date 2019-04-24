@@ -1,3 +1,8 @@
+# Chpater 5 - OCJP
+ - conditions: if-else, switch <br>
+ - loops: for, while, do-while <br>
+ - problems: exceptions, assertion <br>
+
 # Chpater 6 - OCJP
  - String, StringBuilder and StringBuffer <br>
  - java.io -> .File, .Console, .Serializable <br>
