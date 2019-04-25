@@ -5,29 +5,28 @@
 ## Autoboxing with Collections
  - now with java6 you can even add a primitive to a collection (from java6 primitive gets autoboxed to wrapper)
 						
-## Sorting and Searching Arrays and Collections: 
- - read COLLECTION - PART 3
-### ordered vs sorted
- - Ordered Collection (index/insertion/access order) 
- - Sorted Collection (natural order: aplha/num/Comparable, external order: Comparator) 
-### sort 
- - Arrays.sort()(Either Comparable or Comparator used), 
- - Collections.sort() (only lists)(Either Comparable or Comparator used), 
- - TreeSet/TreeMap (Either Comparable or Comparator used)
-### search
- - Arrays.binarySearch()
- - Collections.binarySearch()
+## Sorting and Searching Arrays and Collections: (read COLLECTION - PART 3)
+ - ### ordered vs sorted
+   - Ordered Collection (index/insertion/access order) 
+   - Sorted Collection (natural order: aplha/num/Comparable, external order: Comparator) 
+ - ### sort 
+   - Arrays.sort()(Either Comparable or Comparator used), 
+   - Collections.sort() (only lists)(Either Comparable or Comparator used), 
+   - TreeSet/TreeMap (Either Comparable or Comparator used)
+ - ### search
+   - Arrays.binarySearch()
+   - Collections.binarySearch()
 							
 ## Converting Arrays to Lists, and Lists/Sets to Arrays
  - ### Arrays.asList()
  - ### list.toArray() or set.toArray() or list.toArray(new int[0]) or set.toArray(new int[5])
 
 ## Using List :
-### Iterator: hasNext(), next(), casting
- - Iterator iterator = listObject.iterator();
- - (Similarly for Set and Map:
-    - Iterator iterator = setObject.iterator();
-    - Iterator<Map.Entry<String, String>> iterator = mapObject.entrySet().iterator();)
+ - ### Iterator: hasNext(), next(), casting
+   - Iterator iterator = listObject.iterator();
+   - (Similarly for Set and Map:
+     - Iterator iterator = setObject.iterator();
+     - Iterator<Map.Entry<String, String>> iterator = mapObject.entrySet().iterator();)
 
 ## Using Set:
  - ### add() -> returns false if item already present
