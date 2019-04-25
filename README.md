@@ -8,3 +8,8 @@
  - java.io -> .File, .Console, .Serializable <br>
  - Dates <br>
  - Formatting and Parsing <br>
+ 
+ # Chapter 7 - OCJP
+ - equals() and hashCode()
+ - Collections
+ - Generics
